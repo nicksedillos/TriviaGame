@@ -1,0 +1,28 @@
+h1 {
+	font-family: 'Vast Shadow', cursive;
+	font-size: 3em;
+	margin: 0 0 0.5em 0;
+}
+
+h2, p {
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	font-size: 1.4em;
+	margin: 0.5em 0 0 0;
+}
+
+#wrapper {
+	width: 80%;
+	margin: 1em auto 1em auto;
+	padding: 1em;
+	background-color: #fbe547;
+}
+
+#startButton {
+	font-weight: bold;
+	padding: 0.5em;
+	border: solid 0.1em;
+	border-radius: 2em;
+}

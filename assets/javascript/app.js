@@ -1,9 +1,22 @@
 //TRIVIA GAME
 //Start Screen: instructions and Start Button.
-$(document).ready(function(){
-		$("div#gameBody").html("<h2 id='startButton'>Click to Start</h2>");
 
-/*
+$(document).ready(function(){
+	$("div#gameBody").html(`
+		<p>You will have X minutes to complete the following trivia questions. Good luck!</p>
+		<h2 id='startButton'>Click to Start</h2>
+	`);
+
+	$("div#startButton").click(startGame());
+	});
+
+function startGame(){
+	$("div#gameBody").html(`
+		<h2>test</h2>
+	`)
+}
+
+	/*
 Start Button: Calls the Quiz Screen.
 Quiz Screen: Timer, Questions, and Done button.
 Timer: Counts down from X seconds. When the timer reaches 0, quiz results are recorded, a "time's up" message is displayed, and the Results Screen is called.
@@ -51,5 +64,3 @@ What were Recep Tayyip Erdoğan's professions prior to becoming President of Tur
 	C. Government spokesperson, Minster for the Environment and Nuclear Safety
 	D. Steel manufacturing executive, Secretary General of the Liberal Democratic Party
 */
-
-});
